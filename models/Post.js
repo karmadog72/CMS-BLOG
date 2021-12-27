@@ -55,7 +55,7 @@ Post.init(
       type: DataTypes.TEXT,
       allowNull: false,
       validate: {
-        isURL: true,
+        len: [1],
       },
     },
     user_id: {
